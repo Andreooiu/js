@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Квадратне рівняння</title>
+</head>
+<body>
+    <script>
+        alert ("Розв'язування квадратного рівняння ax²+bx+c=0");
+        let  a =+prompt('Введіть змінну a','');
+        let  b =+prompt('Введіть змінну b','');
+        let  c =+prompt('Введіть змінну c','');
+        let  D =Math.pow(b,2)-4*a*c;
+        if (D==0) {
+        let x = -b/2*a;
+            alert ('Відповідь x='+x);
+             } else if  (D>0) {
+              let x1 =(-b-Math.sqrt(D))/2*a;
+              let x2 =(-b+Math.sqrt(D))/2*a;
+             alert ('Відповідь: x1='+x1+',x2='+x2);
+             
+                  } else  {
+                      alert ('Коренів немає')
+                  }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок страницы</title>
+</head>
+<body>
+    
+</body>
+</html>

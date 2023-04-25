@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Біквадратне рівняння</title>
+</head>
+<body>
+    <script>
+        alert ("Розв'язування біквадратного рівняння ax⁴+bx²+c=0");
+        let  a =+prompt('Введіть змінну a','1');
+        let  b =+prompt('Введіть змінну b','-1');
+        let  c =+prompt('Введіть змінну c','-4');
+        let  D =Math.pow(b,2)-4*a*c;
+        if (D==0) {
+        let t = -b/2*a
+        if (t==0){
+            let x=0
+            alert('Відповідь x=0')
+        }
+             } else if  (D>0) {
+              let t1 =(-b-Math.sqrt(D))/2*a;
+              let t2 =(-b+Math.sqrt(D))/2*a;
+              if (t1>0, t2>0){
+                  let x1= Math.sqrt(t1)
+                  let x2= -Math.sqrt(t1)
+                  let x3= Math.sqrt(t2)
+                  let x4= -Math.sqrt(t2)
+                  alert('Відповідь: x1='+x1+';x2='+x2+';x3='+x3+';x4='+x4)
+              } else if (t1=0, t2>0){
+                  let x1= Math.sqrt(t2)
+                  let x2= -Math.sqrt(t2)
+                  let x3= 0
+                  alert('Відповідь: x1='+x1+';x2='+x2+';x3='+x3)
+              } else if (t1>0, t2=0){
+                  let x1= Math.sqrt(t1)
+                  let x2= -Math.sqrt(t1)
+                  let x3= 0
+                  alert('Відповідь: x1='+x1+';x2='+x2+';x3='+x3)
+              } else if (t1<0, t2<0){
+                  alert('Коренів немає')
+              } else if (t1<0, t2>0){
+                  let x1= Math.sqrt(t2)
+                  let x2= -Math.sqrt(t2)
+                  alert('Відповідь: x1='+x1+';x2='+x2)
+              } else if (t1>0, t2<0){
+                  let x1= Math.sqrt(t1)
+                  let x2= -Math.sqrt(t1)
+                  alert('Відповідь: x1='+x1+';x2='+x2) 
+                  }
+                  if (t1<0, t2=0){
+                  alert('Відповідь x=0')
+                  }
+              if (t1=0, t2<0){
+                  alert('Відповідь x=0')
+              }
+                   } else if (D<0) {
+                      alert ('Коренів немає')
+                  }
+    </script>
+</body>
+</html>
